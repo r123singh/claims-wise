@@ -112,7 +112,7 @@ OPENAI_API_KEY=your_openai_api_key
 4. Run the application
 
 ```bash
-uvicorn main:app --reload
+uvicorn app:app --reload
 ```
 
 5. Open the application in your browser
