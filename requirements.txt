@@ -1,0 +1,6 @@
+openai-agents
+gradio
+fastapi
+uvicorn
+
+

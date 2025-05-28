@@ -1,0 +1,15 @@
+# Sample queries that can be answered by the insurance claim system
+
+  sample_queries = [
+        "I need to file a new insurance claim",
+        "What documents do I need for my claim?",
+        "How do I check the status of my claim?",
+        "What is the typical processing time for claims?",
+        "Can I file a claim online?",
+        "What types of insurance claims do you handle?",
+        "How do I appeal a denied claim?",
+        "What is the maximum coverage amount?",
+        "Do I need to pay a deductible?",
+        "How do I update my contact information for my claim?"
+        
+    ]
