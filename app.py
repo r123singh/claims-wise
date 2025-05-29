@@ -5,6 +5,7 @@ from typing import List, Optional
 import json
 import asyncio
 from agent import triage_agent, InsuranceClaimContext
+import os
 from agents import (Runner, 
                     MessageOutputItem, 
                     TResponseInputItem,
@@ -110,5 +111,12 @@ if __name__ == "__main__":
     # uvicorn.run(app, host="127.0.0.1", port=8000)
 
     # This is to run the application on the render.com server.
+    # import uvicorn
+    # port = os.environ.get("PORT", 4000)
+    # uvicorn.run(app, host="0.0.0.0", port=port)
+    
+    # For render.com deployment, we need to ensure the port is properly bound
+    # and the server is accessible from outside
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.environ.get("PORT", 4000))
+    uvicorn.run(app, host="0.0.0.0", port=port, log_level="info")
